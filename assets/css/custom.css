@@ -213,6 +213,23 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Header and scroll progress positioning */
+#header {
+    position: relative;
+    z-index: 10000;
+}
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, var(--accent-color, #1e90ff), var(--secondary-color, #00bfff));
+    z-index: 10001;
+    transition: width 0.1s ease;
+}
+
 /* Particle background */
 #particles-bg {
     position: fixed;
@@ -222,6 +239,27 @@ body {
     height: 100%;
     z-index: -1;
     opacity: 0.3;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0.5em;
+    color: inherit;
+    transition: transform 0.3s ease;
+    margin: 0 0.5em;
+}
+
+.theme-toggle:hover {
+    transform: rotate(45deg);
+}
+
+nav .theme-toggle {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Enhanced animations */
@@ -243,18 +281,6 @@ body {
 
 .project-card:hover {
     animation: float 3s ease-in-out infinite;
-}
-
-/* Scroll Progress Bar */
-#scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
-    z-index: 1000;
-    transition: width 0.1s ease;
 }
 
 /* Interactive Skill Charts */
