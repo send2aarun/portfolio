@@ -152,8 +152,7 @@
 			letter-spacing: 0;
 			font-family: _font(family);
 			text-transform: none;
-			font-weight: _font(weight);
-			padding-left: (_size(element-height) * 0.6) + 1rem;
+			font-weight: _font(weight);            padding-left: calc(#{_size(element-height) * 0.6} + 1rem);
 			padding-right: 1rem;
 			position: relative;
 
