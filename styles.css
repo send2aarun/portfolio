@@ -1,11 +1,12 @@
 /* ==================== VARIABLES & RESET ==================== */
 :root {
-    --primary-color: #000;
-    --secondary-color: #f5f5f7;
-    --accent-color: #0071e3;
-    --text-color: #1d1d1d;
-    --text-light: #6e6e73;
-    --border-color: #e5e5e7;
+    --primary-color: #1a2332;
+    --secondary-color: #f0f4f8;
+    --accent-color: #14b8a6;
+    --text-color: #2d3748;
+    --text-light: #718096;
+    --border-color: #cbd5e1;
+    --silver: #e2e8f0;
     --white: #ffffff;
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -48,6 +49,94 @@ button {
     cursor: pointer;
     font-family: inherit;
     transition: var(--transition);
+}
+
+/* ==================== AI SOLUTIONS SECTION ==================== */
+.ai-solutions {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(135deg, var(--silver) 0%, var(--white) 100%);
+}
+
+.ai-solutions .section-title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.ai-project-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-2xl);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ai-project-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 24px rgba(20, 184, 166, 0.1);
+}
+
+.ai-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.ai-card-header h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.ai-tag {
+    background: linear-gradient(135deg, var(--accent-color), #0ea5a5);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.ai-card-description {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.ai-impacts {
+    display: grid;
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm);
+    color: var(--text-color);
+}
+
+.impact-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.impact-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.ai-card-cta {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-style: italic;
+    margin-top: var(--spacing-lg);
 }
 
 /* ==================== NAVIGATION ==================== */
@@ -142,7 +231,7 @@ button {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(0, 113, 227, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(20, 184, 166, 0.1) 0%, transparent 70%);
     border-radius: 50%;
     top: 10%;
     right: -100px;
@@ -200,7 +289,7 @@ button {
 .cta-button.primary:hover {
     background: #0055b8;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 113, 227, 0.3);
+    box-shadow: 0 10px 25px rgba(20, 184, 166, 0.3);
 }
 
 .cta-button.secondary {
@@ -522,7 +611,7 @@ section {
     background: var(--white);
     border-color: var(--accent-color);
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 113, 227, 0.1);
+    box-shadow: 0 20px 40px rgba(20, 184, 166, 0.1);
 }
 
 .contact-icon {
