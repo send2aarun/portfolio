@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aarun's Modern Portfolio
 
 A beautifully designed, modern portfolio website inspired by Apple's design philosophy. Showcasing technology engineering expertise, projects, and professional background.
@@ -154,3 +155,6 @@ For questions or issues, reach out via:
 ---
 
 Built with ❤️ by Aarun
+=======
+# aarun.github.io
+>>>>>>> 5fcc13963bcf5c59d03faffacfbcb32c2a061fa1
